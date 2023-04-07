@@ -5,7 +5,7 @@ function promptForInput() {
   const passwordLength = prompt("How long do you want your password to be? (Minumimum 16): ");
 
   if(passwordLength < 16) {
-    console.log("Password length must be at least 16 characters");
+    console.log("Password length must be at least 16 characters\n");
     return promptForInput();
   }
   return passwordLength;
