@@ -13,7 +13,7 @@ function promptForInput() {
 
 function generatePassword(passwordLength) {
   const characters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!$%&()*+,-./:;<=>?@[]^_`{|}~";
-  var password;
+  let password = "";
 
   for (let i = 0; i < passwordLength; i++) {
     const charIndex = Math.floor(crypto.randomBytes(1)[0] / 256 * characters.length);
